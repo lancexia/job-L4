@@ -24,7 +24,7 @@ before_action :authenticate_user!
    private
 
    def resume_params
-     params.require(:resume).prmit(:content, :attachment)
+     params.require(:resume).permit(:content, :attachment)
    end
 
 
