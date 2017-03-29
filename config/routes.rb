@@ -15,6 +15,13 @@ Rails.application.routes.draw do
     resources :resumes
   end
 
+   match 'search' => 'jobs#search', via: [:get, :post], as: :search
+  resources :jobs do
+    collection do
+      get :search
+    end
+  end
+
    resources :welcome do
    end
 
