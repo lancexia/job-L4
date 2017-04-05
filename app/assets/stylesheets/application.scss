@@ -12,4 +12,16 @@
  *
  *= require_tree .
  *= require_self
+ *= require font-awesome
  */
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+ @import "font-awesome";
+
+
+ .lead {
+  margin-bottom: 60px;
+  text-align: center;
+  color: white;
+}
